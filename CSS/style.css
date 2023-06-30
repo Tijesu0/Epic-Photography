@@ -1,0 +1,296 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s; /* Apply smooth transition effect */
+}
+body.dark-mode {
+    background-color: #000000; /* Dark mode background color */
+  }
+
+  
+  
+
+h1,
+h2,
+.fw-bold {
+    font-weight: 800 !important;
+    color: black;
+}
+
+h3,
+h4,
+.fw-semi-bold {
+    font-weight: 700 !important;
+}
+
+h5,
+h6,
+.fw-medium {
+    font-weight: 600 !important;
+}
+p{
+    color: black;
+}
+
+
+
+
+/* Button */
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+.btn{
+    border: 1px solid burlywood;
+    color: burlywood;
+}
+ .btn:hover{
+    border: 1px solid black;
+    background-color:  black;
+    color: burlywood;
+}
+.btn-hov:hover{
+    background-color: silver;   
+    color: black;
+}
+
+.btn-bla{
+    color: black;
+    border-color: black;
+}
+.btn-black{
+    color: burlywood;
+    border-color: black;
+    background-color: black;
+}
+.btn-black:hover{
+    color: burlywood;
+    border-color: rgba(0, 0, 0, 0.935);
+    background-color:rgba(0, 0, 0, 0.935) ;
+}
+
+.btn-bla:hover{
+    background-color: black;   
+    color: burlywood;
+}
+
+
+  /* Navigation */
+.navbar-nav .nav-link{
+    margin-left: 10px;
+    padding: 35px 0;
+    color:white;
+    
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    transition: .5s;
+}
+
+.navbar {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    color: white;
+}
+
+ .navbar-nav .nav-link:hover{
+    color: burlywood;
+   
+   
+}
+ .navbar-toggler {
+    color: burlywood ;
+    border-color: burlywood;
+}
+
+.nav-tabs{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.nav-tabs .nav-link{
+    margin-bottom: 4px;
+}
+
+.navbar.navbar-custom {
+    background-color: rgba(0, 0, 0, 0.857);
+  
+  }
+  
+
+.tab-content{
+    margin-top: 3rem;
+}
+
+
+/* Carousel */
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.545);
+    z-index: 1;
+}
+.carousel-item img{
+    height: 100vh;
+}
+
+
+.carousel-caption h1{
+    color:  burlywood;
+}
+
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.about-content .btn{
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+}
+.about-content .btn:hover{
+    border: 1px solid burlywood;
+    background-color: burlywood;
+    color: black;
+}
+
+
+
+.black{
+    color: black;
+}
+.black:hover{
+    color: black;
+}
+
+
+  
+
+
+
+  /* Gallery */
+
+  
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, rgba(0, 0, 0, 0.805));
+  mask-image: linear-gradient(black, transparent);
+}
+
+
+.expandable-image {
+    cursor: pointer;
+    transition: width 0.3s, height 0.3s; /* Apply smooth transition effect */
+}
+
+.expanded {
+    width: 400px; 
+    height:auto; 
+    position: absolute;
+    background-attachment: fixed;
+    z-index: 1;
+  }
+
+
+  .fixed-image{
+    position: fixed;
+    top: 10px;
+    bottom: 10px;
+  }
+
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: burlywood;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+ 
+/* Dark mode */
+  .text-change{
+    color: burlywood;
+  }
+  .text-change:hover{
+    color: burlywood;
+  }
+  
+ 

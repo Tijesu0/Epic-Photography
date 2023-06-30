@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+     <!-- Icon Font Stylesheet -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ 
+      <!-- Libraries Stylesheet -->
+      <link href="JS/animate/animate.min.css" rel="stylesheet">
+
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+
+  <!-- GALLERY -->
+
+    <div class="container-fluid">
+        <div class="container py-5">
+            <div class=" col-lg-5 d-flex  align-items-center justify-content-around text-center w-100"   >
+                <div class="section-title ">
+                    <h2 class="fw-bold text-ch" >Gallery</h2>
+                </div>
+              
+                <a href="./index.html" class="text-black text-bold black text-ch" style="font-size: 40px;">&#10005</a>
+            </div>
+        </div>
+    </div>
+
+      
+    <div class="container-fluid " >
+     
+      <div class=" d-flex flex-column align-items-center justify-content-center" >
+
+        <nav class="d-flex align-items-center ">
+          <div class="nav nav-tabs pill" id="nav-tab" role="tablist"  >
+            <button class="nav-link active" id="nav-selfies-tab" data-bs-toggle="tab" data-bs-target="#nav-selfies" type="button" role="tab" aria-controls="nav-selfies" aria-selected="true" style="color: burlywood; width: 200px;background-color: black; ">SELFIES</button>
+            <button class="nav-link" id="nav-abstract-tab" data-bs-toggle="tab" data-bs-target="#nav-abstract" type="button" role="tab" aria-controls="nav-abstract" aria-selected="false" style="color: burlywood;width: 200px;background-color: black; ">ABSTRACT</button>
+            <button class="nav-link" id="nav-interior-tab" data-bs-toggle="tab" data-bs-target="#nav-interior" type="button" role="tab" aria-controls="nav-interior" aria-selected="false" style="color: burlywood;width: 200px;background-color: black; ">INTERIOR</button>
+          </div>
+        </nav>
+
+        
+        <div class="tab-content " id="nav-tabContent" >
+          <div class="tab-pane fade show active" id="nav-selfies" role="tabpanel" aria-labelledby="nav-selfies-tab" tabindex="0"  >
+            <div class="row justify-content-around mb-5 " >
+              <div class="col-4 expandable-image shadow d-flex align-items-center"  onclick="expandImage(this)" style=" height: fit-content;">
+              <img src="./images/2.jpg"  
+               class="img-fluid rounded"
+               alt="Image 1">
+            </div>
+            
+             
+            <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+              <img
+               alt="Image 2"
+                class="img-fluid rounded" 
+                src="./images/17.jpg"/>
+              </div>
+            </div>
+              <div class="row  justify-content-center g-5" >
+                <div class="col-4 shadow expandable-image mid " onclick="expandImage(this)" style=" height: fit-content;">
+                <img
+                  alt=""
+                  class="img-fluid rounded"
+                  src="./images/17.jpg"/>
+              </div>
+               
+              <div class="col-4 expandable-image shadow  mid" onclick="expandImage(this)" style=" height: fit-content;">
+                <img
+                  alt=""
+                  class="img-fluid rounded" 
+                  src="./images/2.jpg"/>
+                </div>
+            </div>
+          
+            <div class="row justify-content-around mt-5"  >
+              <div class="col-4 expandable-image shadow " onclick="expandImage(this)" style=" height: fit-content;">
+              <img
+                alt=""
+                class="img-fluid rounded"
+                src="./images/2.jpg"/>
+            </div>
+             
+            <div class="col-4 expandable-image shadow " onclick="expandImage(this)" style=" height: fit-content;">
+              <img
+                alt=""
+                class="img-fluid rounded" 
+                src="./images/17.jpg"/>
+              </div>
+          </div>
+          
+          </div>
+          <div class="tab-pane fade" id="nav-abstract" role="tabpanel" aria-labelledby="nav-abstract-tab" tabindex="0">
+             <div class="row justify-content-around mb-5">
+            <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded"
+              src="./images/17.jpg"/>
+          </div>
+           
+          <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded" 
+              src="./images/2.jpg"/>
+            </div>
+          </div>
+            <div class="row justify-content-around g-5">
+              <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+              <img
+                alt=""
+                class="img-fluid rounded "
+                src="./images/2.jpg"/>
+            </div>
+             
+            <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+              <img
+                alt=""
+                class="img-fluid rounded " 
+                src="./images/17.jpg"/>
+              </div>
+          </div>
+
+          <div class="row justify-content-around mt-5">
+            <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded"
+              src="./images/17.jpg"/>
+          </div>
+           
+          <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded" 
+              src="./images/2.jpg"/>
+            </div>
+        </div>
+      </div>
+
+          <div class="tab-pane fade" id="nav-interior" role="tabpanel" aria-labelledby="nav-interior-tab" tabindex="0">
+            <div class="row justify-content-around mb-5">
+            <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded"
+              src="./images/2.jpg"/>
+          </div>
+           
+          <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded" 
+              src="./images/17.jpg"/>
+            </div>
+          </div>
+            <div class="row justify-content-center g-5">
+              <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+              <img
+                alt=""
+                class="img-fluid rounded"
+                src="./images/17.jpg"/>
+            </div>
+             
+            <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+              <img
+                alt=""
+                class="img-fluid rounded" 
+                src="./images/2.jpg"/>
+              </div>
+          </div>
+
+          <div class="row justify-content-around mt-5">
+            <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded"
+              src="./images/2.jpg"/>
+          </div>
+           
+          <div class="col-4 expandable-image shadow" onclick="expandImage(this)" style=" height: fit-content;">
+            <img
+              alt=""
+              class="img-fluid rounded" 
+              src="./images/17.jpg"/>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    
+
+    <!-- FOOTER -->
+      <div class="container-fluid py-5 text-white mt-5" style="background: black;">
+        <div class="container  text-center d-flex flex-column align-items-center justify-content-center">
+            <div class="row justify-content-end">
+              <div class="col-lg-4 mb-4 w-100  " >
+                <h2 class="mb-3 text-white text-center"> FOLLOW US</h2>
+                </div>
+              <div class="  d-flex justify-content-center mb-4 " >
+                <a class="btn  btn-rounded me-2" href="#" style="box-shadow: 0 0 10px burlywood;"><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-rounded btn-square me-2" href="#" style="box-shadow: 0 0 10px burlywood;"><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-rounded btn-square me-2" href="#" style="box-shadow: 0 0 10px burlywood;"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                <a class="btn btn-rounded btn-square" href="#" style="box-shadow: 0 0 10px burlywood;"><i class="fab fa-instagram fw-normal"></i></a>
+            </div>
+                <div class="col-lg-4 w-100 " >
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0 text-white">&copy; 2023<a class="text-white border-bottom" href="#"> EPIC PHOTOGRAPHY</a>. All Rights Reserved. 
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
